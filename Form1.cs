@@ -38,6 +38,7 @@ namespace Skoczek_Neuronowy
 
     public partial class Okienko : Form
     {
+        public const string Wersja = "1.0";
         public static int BokSzachownicy = 8; // Długość boku szachownicy
         public bool zatrzymaj = false;
         public bool pauza = false;
@@ -262,7 +263,7 @@ namespace Skoczek_Neuronowy
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            
+            this.Text = "Skoczek Neuronowy - wer. " + Wersja;
         }
 
         public void button1_Click(object sender, EventArgs e)
